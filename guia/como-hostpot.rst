@@ -18,7 +18,7 @@ Primero debemos pensar qué queremos hacer, a quién queremos dar WiFi, y dónde
 La respuesta puede parecer obvia, **“a todos los clientes del hotel”**, pero no estamos hablando de personas, sino que el WiFi se entrega a **dispositivos del clientes**, y ahí es donde debemos tener cuidado, ya que no es lo mismo que nuestro **cliente WiFi** sea un portátil, una tablet o un teléfono móvil (smartphones). Este último siendo el peor **cliente WiFi** que podemos tener en nuestros escenarios.
 
 Concurrencia de clientes
-+++++++++++++++++++++++++++
+--------------------------
 
 Se trata del número de clientes conectados a la vez; no tienen por qué estar navegando. Como norma, siempre hemos de estimar el número de clientes del Hotel conectados a la red WiFi que en general, no será muy inferior al número de habitaciones.
 
@@ -26,7 +26,7 @@ Muchos huéspedes del hotel conectan su SmartPhone a la red WiFi para descargar 
 
 
 Áreas problemáticas a cubrir en un Hotel
-++++++++++++++++++++++++++++++++++++++++++
+--------------------------
 
 Suelen ser aquellas áreas donde puedan concentrarse una gran cantidad de usuarios simultáneos; sala de conferencias, piscina, recepción, etc.
 
@@ -35,7 +35,7 @@ Por ejemplo,una sala de conferencias; digamos que tiene unas dimensiones de 30x3
 Debemos plantearnos instalar más Puntos de Acceso para que puedan soportar la carga de clientes entre todos los APs.
 
 Planificación Técnica
-++++++++++++++++++++++++
+--------------------------
 
 Vamos a realizar un ejemplo con un Hotel tipo con las siguientes características:
 
@@ -49,7 +49,7 @@ Vamos a realizar un ejemplo con un Hotel tipo con las siguientes característica
 - 1 Zona de Oficinas, back Office, administración y gerencia con capacidad para 15 empleados
 
 Infraestructura red actual
-++++++++++++++++++++++++
+--------------------------
 
 - Recepción: 2 PCs para el Check-in y Check-out de los clientes
 - Oficinas: 15 PCs y varias impresoras
@@ -99,7 +99,7 @@ Planificación por tipo de cliente WiFi
  -512Kbs y sin navegación.
 
 Estimación usuarios simultáneos y de anchos de banda totales simultáneos
----------------------------------------------------------------------
+--------------------------
 
 - 50 Cliente estándar x 256Kbps=12800Kbps =12,8Mbps
 - 12 Cliente VIP x 500Kbps=6000Kbps = 6,0Mbps
@@ -111,47 +111,55 @@ Estimación usuarios simultáneos y de anchos de banda totales simultáneos
 - 10 Cámaras de Video-vigilancia x 512Kbps 0 Consumo de ADSL = 0
 - TOTALES:231 Usuarios simultáneos y con un caudal total de = 60,5Mbs
 
-En una situación de consumo “máximo” podemos precisar de al menos 60Mbps, en otro caso sufriremos cuellos de botella en el supuesto de que se conecten más dispositivos de los estimados.
 
-Importante: Como ves, el máximo caudal lo precisaremos en las salas de congresos, pero hemos sido cautos con los usuarios estándar y solo hemos previsto que estén conectados un porcentaje medio, porque el uso de las salas de congresos se hacen habitualmente en horario diurno, muchos de los usuarios de esas salas, además suelen ser huéspedes, con lo cual, no hacen uso de dos redes simultáneamente.
+En una situación de consumo **“máximo”** podemos precisar de al menos **60Mbps**, en otro caso sufriremos cuellos de botella en el supuesto de que se conecten más dispositivos de los estimados.
 
-Como veis con esto, ya tenemos algo importante por donde empezar, en este caso de abajo arriba, es decir, de la calle hasta el cliente final.--> Sabemos que como el operador de la zona te ofrece ADSL a un máximo de 20Mbps, precisaríamos de al menos 3 ADLS.
+**Importante:** Como ves, el máximo caudal lo precisaremos en las salas de congresos, pero hemos sido cautos con los usuarios estándar y solo hemos previsto que estén conectados un porcentaje medio, porque el uso de las salas de congresos se hacen habitualmente en horario diurno, muchos de los usuarios de esas salas, además suelen ser huéspedes, con lo cual, no hacen uso de dos redes simultáneamente.
+
+Ya tenemos algo importante por donde empezar, en este caso de abajo arriba, es decir, de la calle hasta el cliente final.--> ***El proveedor de ISP, ofrece un ADSL a un máximo de 20Mbps, precisaríamos de al menos 3 ADLS.***
 
 Elementos / Productos necesarios para instalación de Red WiFi en "Hotel tipo"
+-------------------------------------
+
 Estos son los productos que recomendaríamos para la instalación de la red WiFi en un hotel con las características técnicas y necesidades que hemos citado anteriormente.
 
 Agregador/Balanceador
+----------------
+
 Necesitamos un dispositivo capaz de al menos gestionar 3 ADSL de 20Mbps= 60Mbs, pero además, ha de ser capaz de gestionar todas las peticiones de 250 usuarios simultáneos.
 
 Debe ser un hardware adecuado a las dimisiones y el trabajo que se espera va a realizar, tener un procesador capaz, y una memoria contundente para manejar el tráfico total. En este caso, estaríamos hablando por ejemplo, de un Agregador/Balanceador Peplink PL 380 capaz de 200Mbps Agregados (entrada y salida) puertos Gigabyte y capacidad de gestionar el doble de usuarios, unos 500 en total.
 
-Para más información sobre Balanceadores / Agregadores.
-
-cuantos usuarios simultaneos hotel
+.. figure:: ../images/01.png
 
 Firewall Avanzado
+----------------------
+
 Nuestra red ha de ser segura. Para que los paquetes de archivos sean acometidos en una primera instancia utilizaremos un Firewall avanzado, que reducirá significativamente el tráfico y caudal, llegando a gestionar todos los paquetes autorizados o no autorizados, lo que significa importantes ahorros de ADSL.
 
-firewall hotel
+.. figure:: ../images/02.png
 
 Gestor de clientes (HotSpot)
+--------------------------------
+
 Tal vez podemos decir que éste es el elemento más importante de nuestro proyecto.
 
-Sabemos que podemos tener unos picos de usuarios de 250 clientes simultáneos; debemos seleccionar un HOTSPOT WLAN CONTROLLER adecuado a las necesidades. No podemos instalar un equipo con menos capacidad, pues no será capaz de manejar la gestión de todos los usuarios y todo el tráfico de nuestra red eficientemente (WiFi y cableada):
+Sabemos que podemos tener unos picos de usuarios de 250 clientes simultáneos; debemos seleccionar un **HOTSPOT WLAN CONTROLLER** adecuado a las necesidades. No podemos instalar un equipo con menos capacidad, pues no será capaz de manejar la gestión de todos los usuarios y todo el tráfico de nuestra red eficientemente (WiFi y cableada):
 
-¿Quién se conecta?
-¿Cuándo se conecta?
-¿A qué velocidad Kbps se conectará?
-¿Queremos limitar el acceso por tamaño de tráfico o por tiempo?
-¿Zonas autorizada desde dónde conectarse?
-Gestionar y/o tarificar los tiempos de conexión de acuerdo a la política que hemos marcado
-Guardar un Log de todas las conexiones para saber quién y cuándo se ha conectado.
-Para más información sobre balanceadores/agreagadores: HotSpot
+- ¿Quién se conecta?
+- ¿Cuándo se conecta?
+- ¿A qué velocidad Kbps se conectará?
+- ¿Queremos limitar el acceso por tamaño de tráfico o por tiempo?
+- ¿Zonas autorizada desde dónde conectarse?
+- Gestionar y/o tarificar los tiempos de conexión de acuerdo a la política que hemos marcado
+- Guardar un Log de todas las conexiones para saber quién y cuándo se ha conectado.
 
-cuantos usuarios simultaneos hotel
+.. figure:: ../images/03.png
 
 Switchs Gestionables
-Ya sabemos que el Hotel tipo va a disponer de tres grandes áreas diferenciadas, (parte pública, parte interna y circuito de vídeovigilancia) con lo que un cliente del hotel, jamás ha de poder acceder a la red interna.
+---------------------
+
+Ya sabemos que el Hotel tipo va a disponer de tres grandes áreas diferenciadas, (parte pública, parte interna y circuito de vídeovigilancia) con lo que un cliente del hotel, jamás ha de poder acceder a la red interna. La red interna porjamas debe perturbar la red de Clientes.
 
 Por su parte, la administración y empleados autorizados, sí deben tener acceso desde la red WiFi Pública a la red Interna del hotel con total seguridad y garantías.
 
@@ -159,25 +167,4 @@ Los diferentes switch que se instalen en el hotel deben disponer de la capacidad
 
 Si trabajamos con un escenario donde existan varias zonas de servicio, necesitaremos switches que trabajen con VLANs.
 
-cuantos usuarios simultaneos hotel
-
-¿Te animas a instalar tu conexión de WiFi en tu hotel? WifiSafe se dirige a profesionales, pequeñas y medianas empresas, grandes organizaciones y compañías o administraciones públicas, como una alternativa de solución segura y profesional.
-
-
-
-CONOCE NUESTROS PRODUCTOS Y SOLUCIONES WIRELESS
-
-Protuctos WifiSafe
-PRODUCTOS
-
-Ver Marcas WifiSafe
-MARCAS
-
-Ver Servicios WifiSafe
-SERVICIOS
-
-Ver Soporte WifiSafe
-SOPORTE
-
-Ver
-Para obtener más información, ponte en contacto con el Departamento de Soporte o el Departamento de Pedidos 902 506 100 o envía un correo electrónico a info@wifisafe.com
+.. figure:: ../images/04.png
