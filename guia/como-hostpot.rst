@@ -61,7 +61,7 @@ Infraestructura red actual
 
 Dotar de infraestructura WiFi a todo el Hotel (tanto clientes, como empleados) y aprovecharla para la instalación de cámaras de Vídeovigilancia en varias zonas (piscina, terrazas, Hall y otras zonas).
 
-El Hotel realiza una subdivisión de zonas de servicios/clientes en base a los tipos de usuarios que harán uso de la red:
+El Hotel realiza una subdivisión de zonas de servicios/clientes en base a los **clientes WiFi** que harán uso de la red:
 
 - Cliente estándar
 - Cliente VIP
@@ -101,15 +101,15 @@ Planificación por tipo de cliente WiFi
 Estimación usuarios simultáneos y de anchos de banda totales simultáneos
 ---------------------------------------------------------------------
 
--50 Cliente estándar x 256Kbps=12800Kbps =12,8Mbps
--12 Cliente VIP x 500Kbps=6000Kbps = 6,0Mbps
--10 Clientes de Cortesía 256Kbps= 2500Kbps = 2,5Mbps
--120 Clientes Salones de congresos 256Kbps =30,7Mbps
--8 Empleados con PDAS (sin Acceso a Internet) 0 Consumo de ADSL = 0
--4 Empleados zonas servicios x 256Kbps=1024Kbps = 1,0Mbps
--15 Administración/Gerencia x 512Kbps= = 7,5Mbps
--10 Cámaras de Video-vigilancia x 512Kbps 0 Consumo de ADSL = 0
--TOTALES:231 Usuarios simultáneos y con un caudal total de = 60,5Mbs
+- 50 Cliente estándar x 256Kbps=12800Kbps =12,8Mbps
+- 12 Cliente VIP x 500Kbps=6000Kbps = 6,0Mbps
+- 10 Clientes de Cortesía 256Kbps= 2500Kbps = 2,5Mbps
+- 120 Clientes Salones de congresos 256Kbps =30,7Mbps
+- 8 Empleados con PDAS (sin Acceso a Internet) 0 Consumo de ADSL = 0
+- 4 Empleados zonas servicios x 256Kbps=1024Kbps = 1,0Mbps
+- 15 Administración/Gerencia x 512Kbps= = 7,5Mbps
+- 10 Cámaras de Video-vigilancia x 512Kbps 0 Consumo de ADSL = 0
+- TOTALES:231 Usuarios simultáneos y con un caudal total de = 60,5Mbs
 
 En una situación de consumo “máximo” podemos precisar de al menos 60Mbps, en otro caso sufriremos cuellos de botella en el supuesto de que se conecten más dispositivos de los estimados.
 
