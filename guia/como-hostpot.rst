@@ -39,34 +39,31 @@ Planificación Técnica
 
 Vamos a realizar un ejemplo con un Hotel tipo con las siguientes características:
 
--- 100 habitaciones
+- 100 habitaciones
 
--- 2 salas de multiusos, reuniones/congresos, 1 con 40 posibles usuarios WiFi, y otra con un aforo de 100 usuarios
+- 2 salas de multiusos, reuniones/congresos, 1 con 40 posibles usuarios WiFi, y otra con un aforo de 100 usuarios
 
--- 1 Hall (con zona común)
+- 1 Hall (con zona común)
 
--- Cafetería
+- Cafetería
 
--- 1 Restaurante con un aforo de 200 comensales
+- 1 Restaurante con un aforo de 200 comensales
 
--- 1 zona de Piscina al aire libre con una superficie aproximada de 10m2
-
--- 1 terraza/bar en la zona de piscina con capacidad para 80 personas
-
--- 1 Zona de Oficinas, back Office, administración y gerencia con capacidad para 15 empleados
+- 1 zona de Piscina al aire libre con una superficie aproximada de 10m2
+- 1 terraza/bar en la zona de piscina con capacidad para 80 personas
+- 1 Zona de Oficinas, back Office, administración y gerencia con capacidad para 15 empleados
 
 Infraestructura red actual
 ++++++++++++++++++++++++
 
-** Recepción: 2 PCs para el Check-in y Check-out de los clientes
+# Recepción: 2 PCs para el Check-in y Check-out de los clientes
 
-** Oficinas: 15 PCs y varias impresoras
+# Oficinas: 15 PCs y varias impresoras
 
-** Cafetería: 1 TPV y 2 PDAs inalámbricas
+# Cafetería: 1 TPV y 2 PDAs inalámbricas
 
-** Restaurante: 2 TPVs y 3 PDAs inalámbricas
-
-** Bar/terraza: 1 TPV y 1 PDA inalámbrica
+# Restaurante: 2 TPVs y 3 PDAs inalámbricas
+# Bar/terraza: 1 TPV y 1 PDA inalámbrica
 
 Ancho de Banda: 1 línea de ADSL de 20Mbps/1Mbps
 Requisitos del Cliente (Hotel)
