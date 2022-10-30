@@ -137,7 +137,7 @@ Firewall Avanzado
 
 Nuestra red ha de ser segura. Para que los paquetes de archivos sean acometidos en una primera instancia utilizaremos un Firewall avanzado, que reducirá significativamente el tráfico y caudal, llegando a gestionar todos los paquetes autorizados o no autorizados, lo que significa importantes ahorros de ADSL.
 
-.. figure:: ../images/02.png
+.. figure:: ../images/04.png
 
 Gestor de clientes (HotSpot)
 --------------------------------
@@ -154,7 +154,7 @@ Sabemos que podemos tener unos picos de usuarios de 250 clientes simultáneos; d
 - Gestionar y/o tarificar los tiempos de conexión de acuerdo a la política que hemos marcado
 - Guardar un Log de todas las conexiones para saber quién y cuándo se ha conectado.
 
-.. figure:: ../images/03.png
+.. figure:: ../images/02.png
 
 Switchs Gestionables
 ---------------------
@@ -167,4 +167,4 @@ Los diferentes switch que se instalen en el hotel deben disponer de la capacidad
 
 Si trabajamos con un escenario donde existan varias zonas de servicio, necesitaremos switches que trabajen con VLANs.
 
-.. figure:: ../images/04.png
+.. figure:: ../images/03.png
