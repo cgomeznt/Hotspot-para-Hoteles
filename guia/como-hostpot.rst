@@ -40,15 +40,10 @@ Planificación Técnica
 Vamos a realizar un ejemplo con un Hotel tipo con las siguientes características:
 
 - 100 habitaciones
-
 - 2 salas de multiusos, reuniones/congresos, 1 con 40 posibles usuarios WiFi, y otra con un aforo de 100 usuarios
-
 - 1 Hall (con zona común)
-
 - Cafetería
-
 - 1 Restaurante con un aforo de 200 comensales
-
 - 1 zona de Piscina al aire libre con una superficie aproximada de 10m2
 - 1 terraza/bar en la zona de piscina con capacidad para 80 personas
 - 1 Zona de Oficinas, back Office, administración y gerencia con capacidad para 15 empleados
@@ -56,47 +51,65 @@ Vamos a realizar un ejemplo con un Hotel tipo con las siguientes característica
 Infraestructura red actual
 ++++++++++++++++++++++++
 
-# Recepción: 2 PCs para el Check-in y Check-out de los clientes
+- Recepción: 2 PCs para el Check-in y Check-out de los clientes
+- Oficinas: 15 PCs y varias impresoras
+- Cafetería: 1 TPV y 2 PDAs inalámbricas
+- Restaurante: 2 TPVs y 3 PDAs inalámbricas
+- Bar/terraza: 1 TPV y 1 PDA inalámbrica
+- Ancho de Banda: 1 línea de ADSL de 20Mbps/1Mbps
+- Requisitos del Cliente (Hotel)
 
-# Oficinas: 15 PCs y varias impresoras
-
-# Cafetería: 1 TPV y 2 PDAs inalámbricas
-
-# Restaurante: 2 TPVs y 3 PDAs inalámbricas
-# Bar/terraza: 1 TPV y 1 PDA inalámbrica
-
-Ancho de Banda: 1 línea de ADSL de 20Mbps/1Mbps
-Requisitos del Cliente (Hotel)
 Dotar de infraestructura WiFi a todo el Hotel (tanto clientes, como empleados) y aprovecharla para la instalación de cámaras de Vídeovigilancia en varias zonas (piscina, terrazas, Hall y otras zonas).
 
 El Hotel realiza una subdivisión de zonas de servicios/clientes en base a los tipos de usuarios que harán uso de la red:
 
-Cliente estándar
-Cliente VIP
-Clientes de Cortesía
-Clientes Salones de congresos
-Empleados zonas servicios (mantenimiento, externos, etc.)
-Administración/Gerencia
-Cámaras de Video-vigilancia
-Planificación por tipo de cliente WiFi:
-Cliente Estándar: Dispondrá de una conexión con una velocidad limitada a 256Kbps, y con la duración que consideremos (horas, dias..). Cuando realice el Check-In el personal de recepción le facilitará los datos de la red WiFi.
-Cliente VIP: Conexión con una velocidad limitada a 512Kbps de un día de duración.
-Clientes de Cortesía: Conexión de 128Kbps durante 30 min. desde el momento que se de alta, o durante 24 horas. También para clientes que hagan consumiciones en Cafetería o Restaurante
-Clientes de Salones de congresos: 256Kbps durante el horario del congreso.
-Empleados PDAS, 128kbps con acceso a la red interna.
-Empleados zonas de servicio, mantenimiento 128Kbps podrán navegar por Internet y acceso a la red interna del hotel.
-Administración/gerencia 512Kbps, con acceso a red interna y navegación por Internet
-Cámaras de VídeoVigilancia, 512Kbs y sin navegación.
+-Cliente estándar
+-Cliente VIP
+-Clientes de Cortesía
+-Clientes Salones de congresos
+-Empleados zonas servicios (mantenimiento, externos, etc.)
+-Administración/Gerencia
+-Cámaras de Video-vigilancia
+
+Planificación por tipo de cliente WiFi
+------------------------------------------
+
+-Cliente Estándar: 
+ -Dispondrá de una conexión con una velocidad limitada a 256Kbps, y con la duración que consideremos (horas, dias..). Cuando realice el Check-In el personal de recepción le facilitará los datos de la red WiFi.
+
+-Cliente VIP: 
+ -Conexión con una velocidad limitada a 512Kbps de un día de duración.
+
+-Clientes de Cortesía: 
+ -Conexión de 128Kbps durante 30 min. desde el momento que se de alta, o durante 24 horas. También para clientes que hagan consumiciones en Cafetería o Restaurante
+
+-Clientes de Salones de congresos: 
+ -256Kbps durante el horario del congreso.
+
+-Empleados PDAS:
+ -128kbps con acceso a la red interna.
+
+-Empleados zonas de servicio:
+ -mantenimiento 128Kbps podrán navegar por Internet y acceso a la red interna del hotel.
+
+-Administración/gerencia:
+ -512Kbps con acceso a red interna y navegación por Internet
+
+-Cámaras de VídeoVigilancia:
+ -512Kbs y sin navegación.
+
 Estimación usuarios simultáneos y de anchos de banda totales simultáneos
-50 Cliente estándar x 256Kbps=12800Kbps =12,8Mbps
-12 Cliente VIP x 500Kbps=6000Kbps = 6,0Mbps
-10 Clientes de Cortesía 256Kbps= 2500Kbps = 2,5Mbps
-120 Clientes Salones de congresos 256Kbps =30,7Mbps
-8 Empleados con PDAS (sin Acceso a Internet) 0 Consumo de ADSL = 0
-4 Empleados zonas servicios x 256Kbps=1024Kbps = 1,0Mbps
-15 Administración/Gerencia x 512Kbps= = 7,5Mbps
-10 Cámaras de Video-vigilancia x 512Kbps 0 Consumo de ADSL = 0
-TOTALES:231 Usuarios simultáneos y con un caudal total de = 60,5Mbs
+---------------------------------------------------------------------
+
+-50 Cliente estándar x 256Kbps=12800Kbps =12,8Mbps
+-12 Cliente VIP x 500Kbps=6000Kbps = 6,0Mbps
+-10 Clientes de Cortesía 256Kbps= 2500Kbps = 2,5Mbps
+-120 Clientes Salones de congresos 256Kbps =30,7Mbps
+-8 Empleados con PDAS (sin Acceso a Internet) 0 Consumo de ADSL = 0
+-4 Empleados zonas servicios x 256Kbps=1024Kbps = 1,0Mbps
+-15 Administración/Gerencia x 512Kbps= = 7,5Mbps
+-10 Cámaras de Video-vigilancia x 512Kbps 0 Consumo de ADSL = 0
+-TOTALES:231 Usuarios simultáneos y con un caudal total de = 60,5Mbs
 
 En una situación de consumo “máximo” podemos precisar de al menos 60Mbps, en otro caso sufriremos cuellos de botella en el supuesto de que se conecten más dispositivos de los estimados.
 
