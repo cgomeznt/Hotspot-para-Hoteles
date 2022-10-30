@@ -39,21 +39,21 @@ Planificación Técnica
 
 Vamos a realizar un ejemplo con un Hotel tipo con las siguientes características:
 
-	** 100 habitaciones
+-- 100 habitaciones
 
-	** 2 salas de multiusos, reuniones/congresos, 1 con 40 posibles usuarios WiFi, y otra con un aforo de 100 usuarios
+-- 2 salas de multiusos, reuniones/congresos, 1 con 40 posibles usuarios WiFi, y otra con un aforo de 100 usuarios
 
-	** 1 Hall (con zona común)
+-- 1 Hall (con zona común)
 
-	** Cafetería
+-- Cafetería
 
-	** 1 Restaurante con un aforo de 200 comensales
+-- 1 Restaurante con un aforo de 200 comensales
 
-	** 1 zona de Piscina al aire libre con una superficie aproximada de 10m2
+-- 1 zona de Piscina al aire libre con una superficie aproximada de 10m2
 
-	** 1 terraza/bar en la zona de piscina con capacidad para 80 personas
+-- 1 terraza/bar en la zona de piscina con capacidad para 80 personas
 
-	** 1 Zona de Oficinas, back Office, administración y gerencia con capacidad para 15 empleados
+-- 1 Zona de Oficinas, back Office, administración y gerencia con capacidad para 15 empleados
 
 Infraestructura red actual
 ++++++++++++++++++++++++
