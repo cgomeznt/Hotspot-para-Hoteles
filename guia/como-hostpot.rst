@@ -63,13 +63,13 @@ Dotar de infraestructura WiFi a todo el Hotel (tanto clientes, como empleados) y
 
 El Hotel realiza una subdivisión de zonas de servicios/clientes en base a los tipos de usuarios que harán uso de la red:
 
--Cliente estándar
--Cliente VIP
--Clientes de Cortesía
--Clientes Salones de congresos
--Empleados zonas servicios (mantenimiento, externos, etc.)
--Administración/Gerencia
--Cámaras de Video-vigilancia
+- Cliente estándar
+- Cliente VIP
+- Clientes de Cortesía
+- Clientes Salones de congresos
+- Empleados zonas servicios (mantenimiento, externos, etc.)
+- Administración/Gerencia
+- Cámaras de Video-vigilancia
 
 Planificación por tipo de cliente WiFi
 ------------------------------------------
